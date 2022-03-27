@@ -1,0 +1,285 @@
+@import "vars.scss";
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.container {
+		max-width: 970px;
+	}
+	.menu-header {
+		&__list {
+			li {
+				margin-left: 25px;
+			}
+		}
+	}
+	.imgblock {
+		&__title {
+			max-width: 670px;
+			font-size: 28px;
+			line-height: 44px;
+		}
+	}
+	.header-contentnewsmedia {
+		&__content {
+			padding: 25px 20px;
+		}
+	}
+	.item-newsmedia {
+		margin: 0px 10px;
+		&__column {
+			padding: 0px 10px;
+		}
+	}
+	.content-newsmediavalues {
+		&__title {
+			font-size: 18px;
+			line-height: 24px;
+			padding: 0px 20px 50px 20px;
+		}
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.container {
+		max-width: 750px;
+	}
+	.header {
+		&__body {
+			height: 70px;
+		}
+	}
+	.menu-header {
+		&__list {
+			li {
+				margin-left: 10px;
+			}
+		}
+	}
+	.header {
+		&__logo {
+			width: 125px;
+		}
+	}
+	.menu-header {
+		&__link {
+			font-size: 11px;
+		}
+	}
+	.mainblock {
+		margin-bottom: 80px;
+		&__imgblock {
+			margin-bottom: 25px;
+		}
+	}
+	.imgblock {
+		height: 300px;
+		&__title {
+			max-width: 350px;
+			font-size: 20px;
+			line-height: 35px;
+			bottom: 50px;
+		}
+	}
+	.bottomblock {
+		&__text {
+			font-size: 16px;
+			line-height: 28px;
+		}
+		&__btn {
+			margin-top: 25px;
+		}
+	}
+	.item-stat {
+		&__value {
+			font-size: 40px;
+			margin-bottom: 5px;
+		}
+		&__text {
+			font-size: 14px;
+		}
+	}
+	.investor {
+		margin-bottom: 60px;
+	}
+	.newsmedia {
+		margin-bottom: 40px;
+	}
+	.nav-newsmedia {
+		&__item {
+			margin-left: 50px;
+		}
+	}
+	.item-newsmedia {
+		flex-wrap: wrap;
+		&__column {
+			flex: 0 0 50%;
+		}
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	body {
+		&.lock {
+			position: fixed;
+			width: 100%;
+			overflow: hidden;
+		}
+	}
+	.container {
+		max-width: none;
+		padding: 0 10px;
+	}
+	.title {
+		font-size: 25px;
+		line-height: 33px;
+	}
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+	}
+	.header {
+		&__body {
+			height: 50px;
+		}
+	}
+	.menu-header {
+		&__icon {
+			display: block;
+		}
+		&__menu {
+			position: fixed;
+			padding: 50px 10px 20px 10px;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: -110%;
+			background-color: #fff;
+			overflow: auto;
+			z-index: 2;
+			transition: all 0.5s ease 0s;
+			&.active {
+				left: 0;
+			}
+		}
+		&__list {
+			display: block;
+			li {
+				margin: 0px 0px 10px 0px;
+				&:last-child {
+					margin: 0px;
+				}
+			}
+		}
+		&__link {
+			font-size: 14px;
+		}
+	}
+	.mainblock {
+		margin: 50px 0px;
+	}
+	.imgblock {
+		display: flex;
+		height: auto;
+		min-height: 250px;
+		justify-content: center;
+		align-items: center;
+		&__title {
+			position: relative;
+			bottom: 0;
+			padding: 20px;
+			font-size: 18px;
+			line-height: 30px;
+			text-align: center;
+			max-width: none;
+		}
+	}
+	.btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.investor {
+		margin-bottom: 50px;
+		&__title {
+			margin-bottom: 20px;
+		}
+		&__text {
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 20px;
+		}
+	}
+	.stat-investor {
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0px 5px;
+		&__column {
+			flex: 0 0 33.33%;
+		}
+	}
+	.newsmedia {
+		margin-bottom: 20px;
+	}
+	.header-newsmedia {
+		display: block;
+		margin-bottom: 20px;
+		&__title {
+			margin-bottom: 20px;
+		}
+	}
+	.nav-newsmedia {
+		&__item {
+			margin-left: 0px;
+			margin-bottom: 10px;
+		}
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.item-newsmedia {
+		&__column {
+			flex: 0 0 100%;
+		}
+	}
+	.country {
+		&__title {
+			margin-bottom: 25px;
+		}
+	}
+	.footer {
+		&__body {
+			display: block;
+			height: auto;
+			text-align: center;
+			padding: 20px 0;
+		}
+		&__column {
+			&:last-child {
+				text-align: center;
+			}
+		}
+		&__link {
+			margin: 15px 10px 0px 10px;
+		}
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.stat-investor {
+		&__column {
+			flex: 0 0 50%;
+		}
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
